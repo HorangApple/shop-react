@@ -763,3 +763,38 @@ hr {
 .empty .subtitle {
     font-size: 0.9rem;
 }
+
+/* checkout */
+
+.checkout {
+    max-width: 1000px;
+    padding: 0.8rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.checkout .header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.checkout .body {
+    padding: 1rem 0;
+}
+
+.checkout .body {
+    padding: 1rem 0;
+}
+
+.checkout .btn__area {
+    margin-top: 10px;
+    display: flex;
+}
+
+.checkout button {
+    width: 100%;
+}
+
+.checkout button:nth-child(1){
+    margin-right: 10px;
+}

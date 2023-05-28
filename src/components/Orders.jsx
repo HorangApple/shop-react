@@ -4,11 +4,13 @@ import useOrders from "../Hooks/useOrders";
 import usePrototypes from "../Hooks/usePrototypes";
 import useActions from "../Hooks/useActions";
 import { useMemo } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Orders() {
   const orders = useOrders();
   const prototypes = usePrototypes();
   const { remove, removeAll } = useActions();
+  const navigate = useNavigate();
 
   const totalPrice = useMemo(() => {
     return orders
@@ -76,6 +78,9 @@ export default function Orders() {
           <button
             className={"btn btn--secondary"}
             style={{ width: "100%", marginTop: 10 }}
+            onClick={() => {
+              navigate("/checkout");
+            }}
           >
             CheckOut
           </button>
